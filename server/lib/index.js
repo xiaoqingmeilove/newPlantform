@@ -12,14 +12,14 @@ let port = appEnv.port;
 
 const SERVER_PORT = port;
 const SERVER_HOST = 'localhost';
-const APP_ID = 'myserver-app-2016';
-const MASTER_KEY = '80b7083aca4a8e33768a1c7ad3dd3e5a74ef5dae';
+// const APP_ID = 'myserver-app-2016';
+// const MASTER_KEY = '80b7083aca4a8e33768a1c7ad3dd3e5a74ef5dae';
 
 
-Parse.initialize(APP_ID);
-Parse.serverURL = `http://kc3ip-govplatform-cn.mychinabluemix.net/parse`;
-Parse.masterKey = MASTER_KEY;
-Parse.Cloud.useMasterKey();
+// Parse.initialize(APP_ID);
+// Parse.serverURL = `http://kc3ip-govplatform-cn.mychinabluemix.net/parse`;
+// Parse.masterKey = MASTER_KEY;
+// Parse.Cloud.useMasterKey();
 let server = Express();
 
 
@@ -33,7 +33,7 @@ server.use(function(req, res, next) {
 
 
 
-server.use('/', Express.static(path.join(__dirname, 'public')));  //读取静态文件
+server.use('/', Express.static(path.join(__dirname, 'build')));  //读取静态文件
 
 
 var exportExcel = require('./api/doExcel.js')//从parse中导出相应表格

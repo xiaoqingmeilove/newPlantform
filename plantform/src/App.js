@@ -65,7 +65,7 @@ class App extends Component {
               <Dropdown overlay={menu}>
                 <Avatar style={{ backgroundColor: '#87d068' }} icon="user" />
               </Dropdown>
-              <span>&nbsp;&nbsp;欢迎您 {(window.localStorage.getItem('username')).replace(/^\"|\"$/g,"")}</span>
+              <span>&nbsp;&nbsp;欢迎您 {(window.localStorage.getItem('username')?window.localStorage.getItem('username'):"").replace(/^\"|\"$/g,"")}</span>
             </div>
           </Header>
           <Content style={{ margin: '24px 16px 0' }}>

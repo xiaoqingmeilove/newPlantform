@@ -8,7 +8,9 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import Login from './pages/login';
 import App from './App';
 
-axios.defaults.baseURL = 'http://localhost:6002/transmit';
+// axios.defaults.baseURL = 'http://localhost:6003/transmit';
+axios.defaults.baseURL = '/transmit';
+
 
 {/* <Route path='/login' component={Login} /> */}
 
