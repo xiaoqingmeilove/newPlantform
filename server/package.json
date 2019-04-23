@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon lib/index.js --exec babel-node",
+    "start": "node index.js",
+    "startdev": "nodemon lib/index.js --exec babel-node",
     "build": "babel lib -d dist",
     "server": "node dist/index.js"
   },
