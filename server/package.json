@@ -19,7 +19,7 @@
     "nodemon": "^1.17.5"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.2",
     "cfenv": "^1.1.0",
     "express": "^4.16.3",
     "formidable": "^1.2.1",
