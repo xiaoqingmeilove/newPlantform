@@ -9,10 +9,10 @@
     "customize-cra": "^0.2.12",
     "moment": "^2.24.0",
     "react": "^16.8.4",
-    "react-app-rewired": "^2.1.1",
+    "react-app-rewired": "^2.1.4",
     "react-dom": "^16.8.4",
     "react-router-dom": "^4.4.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "eject": "react-scripts eject",
